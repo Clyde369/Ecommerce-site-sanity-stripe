@@ -4,9 +4,9 @@ import {urlFor} from '../lib/client'
 
 const HeroBanner = ({heroBanner}) => {
   return (
-    <div class="hero-banner-container">
+    <div className="hero-banner-container">
       <div>
-        <p class="beats-solo">{heroBanner.smallText}</p>
+        <p className="beats-solo">{heroBanner.smallText}</p>
         <h3>{heroBanner.midText}</h3>
         <h1>{heroBanner.largeText1}</h1>
         <img src={urlFor(heroBanner.image)} alt=""
