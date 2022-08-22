@@ -5,11 +5,15 @@ import { Product, FooterBanner, HeroBanner } from '../components'
 const Home = ({products, bannerData}) => {
   return (
     <div>
+      <div class="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4" role="alert">
+  <p class="font-bold">PLEASE NOTE</p>
+  <p>THIS APP IS UNDERGOING UPDATES TO TAILWIND, ANYTHING OUT OF THE ORDINARY PLEASE REPORT</p>
+</div>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
 
       <div className="products-heading">
-        <h1>Best selling products</h1>
-        <p>Speakers of many creations</p>
+        <h1 class='text-4xl lg:text-7xl md:text-5xl p-4'>Best selling products</h1>
+        <h4 class='text-2xl lg:text-3xl md:text-3xl p-4'>Speakers of many creations</h4>
       </div>
       <div className="products-container">
         {products?.map(

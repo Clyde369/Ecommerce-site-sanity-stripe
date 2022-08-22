@@ -9,7 +9,7 @@ const Navbar = () => {
   const {showCart, setShowCart, totalQuantities} = useStateContext()
   return (
     <div className="navbar-container">
-      <p className="logo">
+      <p className="logo text-3xl font-bold underline " >
         <Link href="/">
           E-Commerce Demo
         </Link>
