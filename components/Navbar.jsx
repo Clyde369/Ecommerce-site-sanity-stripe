@@ -13,9 +13,9 @@ const Navbar = () => {
           E-Commerce Demo
         </Link>
       </p>
-      <button type="button" className="cart-icon" class='bg-gray-100 hover:bg-gray-200 rounded-xl p-2' onClick={() => setShowCart(true)}>
+      <button type="button" className="cart-icon" className='bg-gray-100 hover:bg-gray-200 rounded-xl p-2' onClick={() => setShowCart(true)}>
         <AiOutlineShopping />
-        <span class="">{totalQuantities}</span>
+        <span className="">{totalQuantities}</span>
       </button>
         {showCart && <Cart />}
     </div>
