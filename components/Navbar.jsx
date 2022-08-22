@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import {AiOutlineShopping} from 'react-icons/ai'
-import { SiBigcommerce } from 'react-icons/si'
 
 import {Cart} from './'
 import {useStateContext} from '../context/StateContext'
@@ -13,11 +12,10 @@ const Navbar = () => {
         <Link href="/">
           E-Commerce Demo
         </Link>
-        <SiBigcommerce />
       </p>
-      <button type="button" className="cart-icon" onClick={() => setShowCart(true)}>
+      <button type="button" className="cart-icon" class='bg-gray-100 hover:bg-gray-200 rounded-xl p-2' onClick={() => setShowCart(true)}>
         <AiOutlineShopping />
-        <span className="cart-item-qty">{totalQuantities}</span>
+        <span class="">{totalQuantities}</span>
       </button>
         {showCart && <Cart />}
     </div>

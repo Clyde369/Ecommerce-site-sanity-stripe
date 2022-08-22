@@ -26,7 +26,7 @@ const Product = ({ product: { image, name, slug, price, details } }) => {
               {/* buttons */}
           <div class="text-center ">
             <button type="button" class="bg-green-500 m-1 hover:bg-green-400 text-white font-bold py-2 px-4 rounded-full">View</button>
-            <button type="button" class="bg-green-500 m-1 hover:bg-green-400 text-white font-bold py-2 px-4 rounded-full">Add to cart</button>
+            <button type="button" class="bg-red-500 m-1 hover:bg-red-400 text-white font-bold py-2 px-4 rounded-full">Add to cart</button>
           </div>
           
           {/* buttons */}
